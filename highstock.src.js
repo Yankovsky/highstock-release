@@ -3399,8 +3399,9 @@ SVGRenderer.prototype = {
 		renderer.height = height;
 
 		renderer.boxWrapper[pick(animate, true) ? 'animate' : 'attr']({
-			width: width,
-			height: height
+			//width: width,
+			//height: height
+			viewBox: '0 0 ' + width + ' ' + height
 		});
 
 		while (i--) {
@@ -11328,7 +11329,7 @@ Chart.prototype = {
 				position: RELATIVE,
 				overflow: HIDDEN, // needed for context menu (avoid scrollbars) and
 					// content overflow in IE
-				width: chartWidth + PX,
+				//width: chartWidth + PX,
 				height: chartHeight + PX,
 				textAlign: 'left',
 				lineHeight: 'normal', // #427
