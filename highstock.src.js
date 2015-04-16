@@ -11329,7 +11329,7 @@ Chart.prototype = {
 				position: RELATIVE,
 				overflow: HIDDEN, // needed for context menu (avoid scrollbars) and
 					// content overflow in IE
-				//width: chartWidth + PX,
+				width: chartWidth + PX,
 				height: chartHeight + PX,
 				textAlign: 'left',
 				lineHeight: 'normal', // #427
